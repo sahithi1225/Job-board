@@ -1,0 +1,90 @@
+/* Jobs.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@700&display=swap');
+
+/* Style for the job card container */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.job-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  height: 300px;
+}
+
+.job-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the job card image */
+.job-card img {
+  width: 100%;
+  border-radius: 5px;
+  height: 200px;
+}
+
+/* Style for the card content */
+.card-content {
+  padding: 10px 0;
+}
+
+.card-content h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* Style for the form popup */
+.form-popup {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-popup input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-popup button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-popup button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

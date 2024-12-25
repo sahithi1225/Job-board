@@ -1,0 +1,57 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Add a background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333; /* Adjust heading color */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold; /* Make labels bold */
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 16px; /* Increase margin bottom for inputs */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s; /* Add transition effect on border color */
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  .error {
+    color: red;
+    margin-top: 8px;
+  }
+  
+  button {
+    padding: 12px 20px; /* Increase padding */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect on background color */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

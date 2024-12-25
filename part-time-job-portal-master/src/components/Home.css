@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@700&display=swap');
+
+.main {
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 700px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.slide {
+    float: left;
+    height: 700px;
+    width: 1400px;
+    position: relative;
+}
+
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Adjusted the opacity for a brighter background */
+}
+
+.slide-content {
+    width:1400px;
+    height: 700px;
+    z-index: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    /* padding-top: 500px; */
+    font-size: 24px; 
+    font-weight: bold; /* Added font weight */
+    padding: 20px; /* Added padding for better readability */
+    background-color: rgba(0, 0, 0, 0.562); /* Adjusted the opacity for a brighter background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-wrapper {
+    width: calc(1400px * 4);
+    animation: slide 10s ease infinite;
+}
+
+.slide:nth-child(1) {
+    background-image: url("https://media.istockphoto.com/id/1394701218/photo/job-search-concept-find-your-career-woman-looking-at-online-website-by-laptop-computer-people.jpg?s=612x612&w=0&k=20&c=V32cT3dAoI7plQSnV-i7YxP43YvaoyA0jLS4729gNWM=");
+    background-size: cover;
+    z-index: 1;
+}
+
+.slide:nth-child(2) {
+    background-image: url("https://img.freepik.com/premium-vector/employees-looking-job-using-magnifying-glass-searching-job-employment-job-vacancy-vector_667085-127.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+
+.slide:nth-child(3) {
+    background-image: url("https://www.debt.org/wp-content/uploads/2020/06/shutterstock_682454728-1.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+
+.slide:nth-child(4) {
+    background-image: url("https://bookboon.com/blog/wp-content/uploads/2013/02/shutterstock_485560211-1024x675.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-1400px * 1);
+    }
+    60% {
+        margin-left: calc(-1400px * 2);
+    }
+    80% {
+        margin-left: calc(-1400px * 3);
+    }
+}

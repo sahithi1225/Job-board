@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@700&display=swap');
+
+.applicant-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.applicant-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Updated to center the title */
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  text-align: center; /* Center the filter container */
+}
+
+.applicant-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.applicant-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: auto; /* Adjusted to accommodate variable content */
+}
+
+.applicant-detail {
+  margin: 5px 0;
+}
+
+.applicant-detail strong {
+  font-weight: bold;
+}
+
+.no-data-message {
+  text-align: center;
+  color: #888;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.accept-button,
+.reject-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reject-button {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.accept-button:hover,
+.reject-button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,57 @@
+/* components/FooterStyles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@700&display=swap');
+
+.Box {
+	padding: 5% 2.5%;
+	background: #333;
+	/* position: absolute; */
+	bottom: 0;
+	width: 95%;
+	font-family: 'Montserrat', sans-serif;
+  }
+  
+  .FooterContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 1000px;
+	margin: 0 auto;
+	/* background: red; */
+  }
+  
+  .Column {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: 60px;
+  }
+  
+  .Row {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+	grid-gap: 20px;
+  
+	@media (max-width: 1000px) {
+	  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+  }
+  
+  .FooterLink {
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 18px;
+	text-decoration: none;
+  }
+  
+  .FooterLink:hover {
+	color: rgb(128, 64, 0);
+	transition: 200ms ease-in;
+  }
+  
+  .Heading {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 40px;
+	font-weight: bold;
+  }
+  

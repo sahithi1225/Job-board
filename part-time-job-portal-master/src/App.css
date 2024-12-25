@@ -1,0 +1,38 @@
+/* Navigation.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@700&display=swap');
+nav {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Heading on left, options on right */
+  align-items: center; /* Center vertically */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 30px; /* Adjusted margin to add space between options */
+}
+
+.aa {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aa:hover {
+  color: #b5610c; /* Change color on hover */
+}
+.head{
+  color: rgb(248, 248, 248);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
